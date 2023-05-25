@@ -112,7 +112,7 @@ function MyTabs() {
           <MaterialIcons
             name="menu"
             size={24}
-            color="blue"
+            color="black"
             style={{ marginLeft: 16 }}
           />
         ),
