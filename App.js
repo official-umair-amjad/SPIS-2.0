@@ -22,7 +22,7 @@ function MyStack() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="Homee" component={Home}
+      <Stack.Screen name="Home" component={Home}
         options={{
           tabBarIcon: ({ color, size }) => (
             <FontAwesome name="user" size={24} color="black" />
