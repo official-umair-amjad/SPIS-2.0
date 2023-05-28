@@ -10,6 +10,7 @@ import Home from './src/screens/Home';
 import COLORS from './src/consts/colors';
 import User from './src/screens/User';
 import Details from './src/screens/Details';
+import Login from './src/screens/Login';
 
 
 const Stack = createNativeStackNavigator();
@@ -36,6 +37,13 @@ function MyStack() {
           ),
         }}
       />
+      <Stack.Screen name="Login" component={Login}
+        options={{
+          tabBarStyle:{
+            display:'none'
+          },
+        }}
+      />
     </Stack.Navigator>
   )
 }
@@ -45,6 +53,7 @@ function MyTabs() {
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen name="Home" component={MyStack}
         options={{
+          
           headerShown: false,
           headerTitleAlign: 'center',
           headerTitleContainerStyle: { justifyContent: 'center', alignItems: 'center' },

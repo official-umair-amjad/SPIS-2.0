@@ -52,7 +52,7 @@ const Home = ({ navigation }) => {
       <View style={style.header}>
         <MaterialCommunityIcons name="sort-variant" size={24} color="black" />
         <Text style={style.headertitle}>S P I S</Text>
-        <MaterialCommunityIcons name="account" size={24} color="black" />
+        <MaterialCommunityIcons name="account" size={24} color="black" onPress={() => navigation.navigate('Login')}/>
       </View>
       <ScrollView>
         <Text style={style.headerTitle}>The New way to buy a smartphone</Text>
